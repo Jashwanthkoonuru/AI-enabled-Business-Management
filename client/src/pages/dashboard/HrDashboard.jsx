@@ -6,7 +6,7 @@ import { FaTachometerAlt, FaUsers, FaClock, FaFileAlt, FaMoneyCheckAlt, FaChartL
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { Logout } from "../../features/auth/authSlice";
-import HRDashboardPage from "../../components/hrDashboardPages/HRDashboardPage";
+import DashboardPage from "../../components/hrDashboardPages/DashboardPage";
 import Employees from "../../components/hrDashboardPages/Employees";
 import Attendance from "../../components/hrDashboardPages/Attendance";
 import LeaveManagement from "../../components/hrDashboardPages/LeaveManagement";
@@ -234,7 +234,7 @@ const HRDashboard = () => {
             color: muiTheme.palette.text.primary,
           }}
         >
-          {selectedMenuItem === "Dashboard" && (<HRDashboardPage />)}
+          {selectedMenuItem === "Dashboard" && (<DashboardPage />)}
           {selectedMenuItem === "Employees" && (<Employees />)}
           {selectedMenuItem === "Attendance" && (<Attendance />)}
           {selectedMenuItem === "Leave Management" && (<LeaveManagement />)}
