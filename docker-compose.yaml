@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   reactjs:
-    build: ./frontend
+    build: ./client
     container_name: react_app
     ports:
       - "80:80"
