@@ -1,6 +1,6 @@
 import React from "react";
 import Login from "../../assets/images/Login.png";
-import Login from "./Login";
+import LoginComponent from "./Login";
 import "./login.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -29,7 +29,7 @@ const LoginPage = () => {
             </div>
           </div>
           <div className="auth-right">
-            <Login />
+            <LoginComponent />
           </div>
         </div>
       </section>
