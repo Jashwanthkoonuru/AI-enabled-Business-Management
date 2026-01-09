@@ -18,7 +18,6 @@ const Loader = () => (
     <CircularProgress />
   </Box>
 );
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
