@@ -1,0 +1,120 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b0764, #2563eb, #312e81);
+  padding: 1rem;
+  padding: 6rem;
+}
+.signup-card {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.signup-title {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.signup-card label {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.signup-card input,
+.signup-card select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+}
+
+.signup-card input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signup-card select option {
+  color: black;
+}
+.signup-card button {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #00f7ff, #2563eb, #8a2be2);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.signup-card button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.login-text {
+  text-align: center;
+  color: white;
+  margin: 1rem 0;
+}
+
+.login-text a {
+  color: #00f7ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 1.5rem;
+  }
+
+  .signup-title {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .signup-card {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .signup-card {
+    max-width: 480px;
+  }
+}
+@media (min-width: 1440px) {
+  .signup-card {
+    max-width: 560px;
+    padding: 2.5rem;
+  }
+
+  .signup-title {
+    font-size: 2.2rem;
+  }
+}
