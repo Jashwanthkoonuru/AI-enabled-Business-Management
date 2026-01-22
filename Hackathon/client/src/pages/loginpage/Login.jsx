@@ -21,6 +21,7 @@ const Login = () => {
   });
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
+    console.log(email, password, role);
     if (!email || !password || !role) {
       setAlert({
         show: true,
@@ -93,7 +94,7 @@ const Login = () => {
   };
   return (
     <div className="login-container-total">
-      <form onSubmit={(e) => {e.preventDefault(); handleLoginSubmit(email, password);}} className="login-card">
+      <form onSubmit={handleLoginSubmit} className="login-card">
         {alert.show && (
           <div className={`alert ${alert.type}`}>
             {alert.message}
