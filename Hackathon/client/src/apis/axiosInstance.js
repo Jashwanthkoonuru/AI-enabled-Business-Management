@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/v1";
+const API_URL = "http://localhost:8081/api/v1";
 
 const axiosInstance = axios.create({
   baseURL: API_URL,
@@ -14,7 +14,7 @@ axiosInstance.interceptors.request.use(
     const publicUrls = ["/auth/login", "/auth/register", "/contact"];
 
     const isPublic = publicUrls.some((url) =>
-      config.url.includes(url)
+      config.url?.includes(url)
     );
 
     if (!isPublic) {
