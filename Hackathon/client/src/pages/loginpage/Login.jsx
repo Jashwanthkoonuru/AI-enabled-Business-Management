@@ -21,7 +21,7 @@ const Login = () => {
   });
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
-
+    console.log(email, password, role);
     if (!email || !password || !role) {
       setAlert({
         show: true,
